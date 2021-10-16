@@ -5,8 +5,7 @@ for (const section of sections) {
     i++;
     let node = document.createElement("li");
     let node__a = document.createElement("a");
-    let dataa = `Section${i}`;
-    node__a.innerHTML = dataa;
+    node__a.innerHTML = `Section${i}`;
     node.appendChild(node__a);
     document.getElementById("navbar__list").appendChild(node);
     const attribute = document.createAttribute('href');
@@ -35,12 +34,12 @@ function solve(id1, id2, id3, c) {
 }
 window.onscroll = function () { myFunction() };
 function myFunction() {
-    if (document.documentElement.scrollTop > (section3.offsetTop) - 100) {
+    if (document.documentElement.scrollTop > (document.querySelector("#section3").offsetTop) - 100) {
         document.getElementById("myBtn").classList.add('on');
         solve("#section3", "#section2", "#section1", "your-active-class");
         solve(".section3", ".section2", ".section1", "current");
     } else {
-        if (document.documentElement.scrollTop > (section2.offsetTop - 100)) {
+        if (document.documentElement.scrollTop > (document.querySelector("#section2").offsetTop - 100)) {
             document.getElementById("myBtn").classList.add('on');
             solve("#section2", "#section3", "#section1", "your-active-class");
             solve(".section2", ".section3", ".section1", "current");
