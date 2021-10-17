@@ -1,13 +1,3 @@
-/*
- *
- * CSS written based on SMACSS architecture.
- * To learn more, visit: http://smacss.com/
- *
- * For simplicity, no reset or normalize is added.
- * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
- *
-*/
-
 html {scroll-behavior: smooth;}
 
 /* ---- Base Rules ---- */
@@ -18,7 +8,6 @@ body {
     font-family: 'Merriweather', serif;
     color: #fff;
 }
-
 
 /* Typeography General*/
 h1 {
@@ -78,16 +67,14 @@ section {
     opacity: 0;
 }
 #myBtn:hover {
-    background: #555; 
+    background: #333; 
+    color: #fff;
 }
-
 .on{
     bottom: 32px;
     opacity: 1;
     pointer-events: auto;
 }
-
-/* ---- Module Rules ---- */
 
 /* Navigation Styles*/
 .navbar__menu ul {
@@ -110,8 +97,8 @@ section {
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     transition: ease 0.3s all;
 }
 
@@ -139,8 +126,6 @@ section {
     color: #fff;
 }
 
-
-/* ---- Theme Rules ---- */
 /* Landing Container Styles */
 .landing__container {
     padding: 1em;
