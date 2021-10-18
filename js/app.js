@@ -5,7 +5,7 @@ for (const section of sections) {
     i++;
     let node = document.createElement("li");
     let node__a = document.createElement("a");
-    node__a.innerHTML = `Section${i}`;
+    node__a.innerHTML = `Section ${i}`;
     node.appendChild(node__a);
     document.getElementById("navbar__list").appendChild(node);
     const attribute = document.createAttribute('href');
