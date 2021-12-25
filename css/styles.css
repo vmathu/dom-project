@@ -60,7 +60,8 @@ section {
     background: #fff; 
     cursor: pointer; 
     padding: 10px;
-    border-radius: 99%; 
+    border-radius: 50%; 
+    display: grid; 
     font-size: 1.8rem; 
     color:rgb(0, 0, 0);
     transition: all .4s ease-in-out;
